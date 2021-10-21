@@ -47,7 +47,7 @@ docker compose exec broker \
 
 echo '******************************************************'
 echo "Producing events/frames from stream.gz to topic 'events'"
-
+echo "Running producer.py (takes ~1 minute depending on machine)"
 python producer.py getting_started.ini
 
 echo '...'
