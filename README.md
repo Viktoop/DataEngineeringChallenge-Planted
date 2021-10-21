@@ -22,7 +22,9 @@
 - Creates two topics called "events" and "events-output"
 - Runs producer.py which has 1 Producer, and it places sample data into 'events' topic
 - Runs consumer.py which has 1 Consumer and 1 Producer consuming from 'events', producing to 'events-output'
-##Bonus Questions / Challenges:
+
+
+## Bonus Questions / Challenges:
   > **Q/C: How do you scale it to improve throughput**?
 
  - Throughput can be increased by setting up a topic with multiple partitions, 
