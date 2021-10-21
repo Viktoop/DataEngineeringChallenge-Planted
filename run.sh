@@ -48,12 +48,6 @@ docker compose exec broker \
 echo '******************************************************'
 echo "Producing events/frames from stream.gz to topic 'events'"
 
-echo "************************** OPTIONAL **************************
-      if you wish to see output run 'output.sh' in another terminal window now
-      **************************************************************"
-
-echo "Running producer.py (takes ~1 minute depending on machine)"
-
 python producer.py getting_started.ini
 
 echo '...'
@@ -69,7 +63,8 @@ echo "Consumer will not stop consuming.
 
 When ev/sec shows 0 repeatedly close with ctrl + C
 
-Output will be located on topic 'events-output' as json.dumps
+Output will be located on topic 'events-output' as json.dumps with real timestamp
+Value diplayed here is human readable 
 {'ts' : timestamp, 'uid_count' : uid_count}"
 
 python consumer.py getting_started.ini
